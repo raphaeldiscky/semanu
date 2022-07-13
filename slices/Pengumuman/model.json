@@ -1,0 +1,71 @@
+{
+  "id": "pengumuman",
+  "type": "SharedSlice",
+  "name": "Pengumuman",
+  "description": "Pengumuman",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Pengumuman",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1",
+            "label": "Title",
+            "placeholder": "This is where it all begins..."
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph",
+            "label": "Description",
+            "placeholder": "A nice description of your feature"
+          }
+        },
+        "lokasi": {
+          "type": "Text",
+          "config": {
+            "label": "Lokasi",
+            "placeholder": ""
+          }
+        },
+        "tanggal": {
+          "type": "Text",
+          "config": {
+            "label": "Tanggal",
+            "placeholder": ""
+          }
+        },
+        "jam": {
+          "type": "Text",
+          "config": {
+            "label": "Jam",
+            "placeholder": ""
+          }
+        },
+        "catatan": {
+          "type": "Text",
+          "config": {
+            "label": "Catatan",
+            "placeholder": ""
+          }
+        },
+        "gambar": {
+          "type": "Image",
+          "config": {
+            "label": "Gambar",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

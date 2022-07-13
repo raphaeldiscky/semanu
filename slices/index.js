@@ -3,6 +3,7 @@
 import Hero from './Hero';
 import Image from './Image';
 import ImageCards from './ImageCards';
+import Pengumuman from './Pengumuman';
 import Quote from './Quote';
 import Text from './Text';
 import TextWithImage from './TextWithImage';
@@ -11,6 +12,7 @@ export {
 	Hero,
 	Image,
 	ImageCards,
+	Pengumuman,
 	Quote,
 	Text,
 	TextWithImage,
@@ -20,6 +22,7 @@ export const components = {
 	hero: Hero,
 	image: Image,
 	image_cards: ImageCards,
+	pengumuman: Pengumuman,
 	quote: Quote,
 	text: Text,
 	text_with_image: TextWithImage,
