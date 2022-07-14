@@ -5,28 +5,36 @@ const Pengumuman = ({ slice }) => {
   const { gambar, lokasi, tanggal, jam, catatan } = slice.primary
 
   return (
-    <section>
+    <section className='w-[80%]'>
       <span className='title'>
         <PrismicRichText field={slice.primary.title} />
       </span>
-      <span className='mt-[20px]'>
+      <div className='my-[20px]'>
         <PrismicRichText field={slice.primary.description} />
-      </span>
-      <div className='grid grid-cols-1 gap-5 md:grid-cols-2'>
+      </div>
+      <div className='grid grid-cols-1'>
         <PrismicImage field={gambar} layout='responsive' />
         <div className='mx-2 text-left'>
-          <h2 className='my-5'>
-            <span className='mr-[18px] font-bold'>Lokasi</span>: {lokasi}
-          </h2>
-          <h2 className='my-5'>
-            <span className='mr-[6px] font-bold'>Tanggal</span>: {tanggal}
-          </h2>
-          <h2 className='my-5'>
-            <span className='mr-[35px] font-bold'>Jam</span>: {jam}
-          </h2>
-          <h2 className='my-5'>
-            <span className='mr-[6px] font-bold'>Catatan</span>: {catatan}
-          </h2>
+          {lokasi && (
+            <h2 className='my-5'>
+              <span className='mr-[18px] font-bold'>Lokasi</span>: {lokasi}
+            </h2>
+          )}
+          {tanggal && (
+            <h2 className='my-5'>
+              <span className='mr-[6px] font-bold'>Tanggal</span>: {tanggal}
+            </h2>
+          )}
+          {jam && (
+            <h2 className='my-5'>
+              <span className='mr-[35px] font-bold'>Jam</span>: {jam}
+            </h2>
+          )}
+          {catatan && (
+            <h2 className='my-5'>
+              <span className='mr-[6px] font-bold'>Catatan</span>: {catatan}
+            </h2>
+          )}
         </div>
       </div>
       <style jsx>{`
